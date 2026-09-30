@@ -1,0 +1,174 @@
+:root {
+  --default-font: "Garamond",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --A-font: "Poppins",  sans-serif;
+}
+
+:root { 
+  --background-color: #FCFCF6; /* Background color for the entire website, including individual sections */
+  --default-color: #514A20; /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #1b2f45; /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #F4B400; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+}
+
+:root {
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  font-family: var(--default-font);
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding-left:10%;
+  padding-right:10%;
+  background-color: var(--background-color);
+  border-bottom: 1px solid #eee;
+  position: fixed;
+}
+
+
+.logo {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: var(--default-font);
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 32px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: var(--default-color);
+  font-weight: 500;
+}
+
+.profile-circle {
+  width: 30px;
+  height: 30px;
+  background-color: #e7cfd0; /* warna pink soft */
+  border-radius: 50%;
+}
+
+.container{
+    padding-top: 7%;
+}
+
+.landing-page{
+    padding-left:10%;
+    padding-right:10%;
+     width: 100%;
+}
+
+.note {
+  display: flex;
+  flex-direction: column;
+  align-items: center;      /* Tengah secara horizontal */
+  /* justify-content: center;  Tengah secara vertikal */
+  /* height: 100vh;            Gunakan tinggi layar penuh */
+  text-align: center;       /* Tengahin teks juga */
+}
+
+.home_container{
+    display: flex;
+    padding-top: 7%;
+    width: 100%;
+}
+
+.timer {
+    
+      width: 50%;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+    }
+
+
+.count{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 128px;
+    font-weight: bold;
+}    
+.jenis-timer {
+    display: flex;              /* ⬅️ WAJIB untuk mengaktifkan Flexbox */
+    justify-content: center;    /* ⬅️ Agar isi berada di tengah secara horizontal */
+    align-items: center;        /* ⬅️ Tengah secara vertikal (jika diperlukan) */
+    flex-direction: row;        /* ⬅️ (default sebenarnya), bisa dihapus */
+    gap: 10px;                  /* ⬅️ (opsional) agar antar tombol ada jarak */
+}
+
+.start-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;      /* Tengah secara horizontal */
+    padding-top: 2%;
+}
+
+.task-on{
+    display: flex;
+    flex-direction: column;
+    align-items: center;      /* Tengah secara horizontal */
+  
+
+}
+.task-music {
+      width: 50%;
+     padding: 10px;
+      
+    }
+
+.task-detail {
+    display: flex;
+    flex-direction: row;      /* opsional karena default-nya row */
+    justify-content: space-between;  /* ⬅️ Ini yang penting untuk kanan-kiri */
+    align-items: center;      /* (opsional) untuk vertikal tengah */
+    gap: 10px;      
+}
+
+
+.task-music .task-detail img{
+    width: 40%;
+}   
+
+.music-player{
+    background-color: #ffffff;
+    width: 90%;
+    height: auto;
+    margin-top: 10%;
+    padding: 5%;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+
+}
+
+.music-player .title{
+    font-size: 20px;
+
+}
+
+.music-player .progress{
+    width: 5%;
+       
+}

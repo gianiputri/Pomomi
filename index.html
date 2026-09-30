@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Timer</title>
+  </head>
+  <body>
+    <nav>
+      <p class="name">Pomomi</p>
+
+      <ul>
+        <li><a href="#main">Home</a></li>
+        <li><a href="#task">Task</a></li>
+        <li><a href="#tracker">Tracker</a></li>
+      </ul>
+    </nav>
+
+    <section id="welcome" class="welcome">
+      <h2>Let's get a focus</h2>
+      <p>step by step, gaol by goal, i’m bulilding the life i want</p>
+    </section>
+
+    <section id="main" class="main">
+      <div class="container" id="home">
+        <div class="left">
+          <p class="timer" id="timer">25:00</p>
+
+          <div class="wrap-button">
+            <div class="menu">
+              <button id="focus">Focus</button>
+              <button id="shortbreak">Short Break</button>
+              <button id="longbreak">Long Break</button>
+            </div>
+
+            <div class="go-stop">
+              <button id="start">start</button>
+              <button id="stop">stop</button>
+            </div>
+          </div>
+
+          <div class="sess">
+            <div class="session" id="session">
+              <p>2/4</p>
+            </div>
+
+            <div class="session-name">
+              <p>study for english</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="right">
+          <div class="post-it">
+            <div class="note note-1">
+              <img src="asset/green.png" alt="" />
+              <p>"you can do it right"</p>
+            </div>
+            <div class="note note-2">
+              <img src="asset/pink.png" alt="" />
+              <p>"Believe in yourself and all that you are."</p>
+            </div>
+            <div class="note note-3">
+              <img src="asset/yellow.png" alt="" />
+              <p>"go gia go..."</p>
+            </div>
+          </div>
+
+          <div class="music" id="music">
+            <div class="music-tittle" id="music-tittle">
+              <p>olivia dean - i've seen it</p>
+            </div>
+
+            <audio controls>
+              <source src="Ripples-Beabadoobee.mp3" type="audio/mpeg" />
+            </audio>
+
+            <div class="buttons" id="buttons">
+              <button>p</button>
+              <button>s</button>
+              <button>r</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="task" class="task">
+      <div class="tittle-page" id="add-task">
+        <h2>TASK <span>/complate</span></h2>
+        <p><a href="#">+Add task</a></p>
+      </div>
+
+      <div class="taskBox">
+        <div class="col">
+          <img src="asset/green.png" alt="" />
+          <img src="asset/pink.png" alt="" />
+          <img src="asset/pink.png" alt="" />
+          <img src="asset/green.png" alt="" />
+          <img src="asset/pink.png" alt="" />
+          <img src="asset/green.png" alt="" />
+          <img src="asset/pink.png" alt="" />
+          <img src="asset/pink.png" alt="" />
+          <img src="asset/green.png" alt="" />
+          <img src="asset/pink.png" alt="" />
+          <img src="asset/pink.png" alt="" />
+          <img src="asset/green.png" alt="" />
+          <img src="asset/pink.png" alt="" />
+          <img src="asset/green.png" alt="" />
+          <img src="asset/pink.png" alt="" />
+          <img src="asset/pink.png" alt="" />
+        </div>
+
+      </div>
+
+      <div class="remind">
+        <p id="angka">4/8</p>
+        <p>Remind Task</p>
+      </div>
+    </section>
+
+    <section id="tracker" class="tracker">
+      
+      <div class="tittle-page">
+        <h2>TRACKER</h2>
+      </div>
+
+      <div class="container">
+
+        <div class="left-calender">
+          <div class="calender">
+            
+            <div class="calenderHeader">
+              <button onclick="prevMonth()" id="prev">‹</button>
+              <h2 id="month-year">September</h2>
+              <button onclick="nextMonth()" id="next">›</button>
+            </div>
+
+            <div class="day-names">
+              <div>Mon</div>
+              <div>Tue</div>
+              <div>Wed</div>
+              <div>Thu</div>
+              <div>Fri</div>
+              <div>Sat</div>
+              <div>Sun</div>
+            </div>
+
+            <div class="days" id="calenderDays">
+              <div>1</div>
+              <div>2</div>
+              <div>3</div>
+              <div>4</div>
+              <div>5</div>
+              <div>6</div>
+              <div>7</div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="right-bar"></div>
+      </div>
+    </section>
+
+    <section id="footer" class="footer"></section>
+
+    <script src="app.js"></script>
+  </body>
+</html>

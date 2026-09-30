@@ -18,7 +18,7 @@ body{
 
 
 body::-webkit-scrollbar {
-    display: none; /* Chrome, Edge, Safari */
+    display: none;
 }
 
 /* Navbar */
